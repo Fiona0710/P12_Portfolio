@@ -1,0 +1,24 @@
+@font-face {
+  font-family: 'cCeltico';
+  src: url('./fonts/cCeltico.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Celtknot';
+  src: url('./fonts/Celtknot.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  color: #bda737 !important;
+  font-family: 'Celtknot', sans-serif !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: 'cCeltico', sans-serif !important;
+}
