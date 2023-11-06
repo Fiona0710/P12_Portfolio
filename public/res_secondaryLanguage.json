@@ -1,13 +1,15 @@
 {
   "basic_info": {
+    "title": "Developer Front-End junior",
     "description_header": "Hello",
     "description": "👋 I'm Fiona, and I recently transitioned into the world of web development. My journey led me to pursue a web development course at OpenClassrooms to earn an RNCP Level 5 degree, equivalent to a bachelor's degree. I discovered the art of web creation and programming, learning to craft responsive websites, optimize user experiences, and make each site as user-friendly as possible. Web development is an endless source of creativity, a space where ideas come to life, and each line of code represents an opportunity to build something unique. This creativity is what drives me, constantly seeking new ways to make websites more interactive and visually captivating. I present to you my portfolio, containing various projects I've had the pleasure to work on.",
     "section_name": {
       "about": "About Me",
       "projects": "Projects",
-      "skills": "Skills",
-      "contact": "Contact"
+      "skills": "Hards Skills",
+      "contact": "Contact me"
     }
+   
   },
   "projects": [
     {
@@ -19,6 +21,7 @@
         "images/projects/Argent-Bank.webp"
       ],
       "url": "https://github.com/Fiona0710/ArgentBank",
+      "urlTitle":"see the code",
       "technologies": [
         {
           "class": "devicon-html5-plain",
@@ -51,6 +54,7 @@
         "images/projects/724-Events.webp"
       ],
       "url": "https://github.com/Fiona0710/724events",
+      "urlTitle":"see the code",
       "technologies": [
         {
           "class": "devicon-html5-plain",
@@ -75,6 +79,9 @@
         "images/projects/Nina-Carducci.webp"
       ],
       "url": "https://github.com/Fiona0710/NinaCarducci",
+      "urlTitle":"see the code",
+      "urlWebSite":"https://fiona0710.github.io/NinaCarducci/",
+      "urlWebSiteTitle":"see the website",
       "technologies": [
         {
           "class": "devicon-html5-plain",
@@ -95,6 +102,7 @@
         "images/projects/Kasa.webp"
       ],
       "url": "https://github.com/Fiona0710/Kasa",
+      "urlTitle":"see the code",
       "technologies": [
         {
           "class": "devicon-figma-plain",
@@ -123,6 +131,7 @@
         "images/projects/Sophie-Bluel.webp"
       ],
       "url": "https://github.com/Fiona0710/Portfolio-architecte-sophie-bluel-FrontEnd-",
+      "urlTitle":"see the code",
       "technologies": [
         {
           "class": "devicon-figma-plain",
@@ -151,6 +160,8 @@
         "images/projects/Print-It.webp"
       ],
       "url": "https://github.com/Fiona0710/P5_Print-it-JS",
+      "urlTitle":"see the code",
+      "urlWebSite":"https://fiona0710.github.io/P5_Print-it-JS/","urlWebSiteTitle":"see the website",
       "technologies": [
         {
           "class": "devicon-html5-plain",
@@ -175,6 +186,9 @@
         "images/projects/Ohmyfood.webp"
       ],
       "url": "https://github.com/Fiona0710/Projet_4",
+      "urlTitle":"see the code",
+      "urlWebSite":"https://fiona0710.github.io/Projet_4/",
+      "urlWebSiteTitle":"see the website",
       "technologies": [
         {
           "class": "devicon-figma-plain",
@@ -199,6 +213,8 @@
         "images/projects/Booki.webp"
       ],
       "url": "https://github.com/Fiona0710/Projet_3_Fiona",
+      "urlTitle":"see the code",
+      "urlWebSite":"https://fiona0710.github.io/Projet_3_Fiona/", "urlWebSiteTitle":"see the website",
       "technologies": [
         {
           "class": "devicon-figma-plain",
@@ -214,5 +230,14 @@
         }
       ]
     }
-  ]
+  ],
+  "contact": {
+    "name": "Name",
+    "name_placeholder": "Your name",
+    "email": "Email address",
+    "email_placeholder": "Your email address",
+    "message": "Message",
+    "message_placeholder": "Your message",
+    "submit":"Send"
+}
 }

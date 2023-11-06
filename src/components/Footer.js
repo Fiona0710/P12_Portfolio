@@ -1,8 +1,6 @@
 import React from 'react';
 
-function Footer(props) {
-  const { sharedBasicInfo } = props;
-
+function Footer({ sharedBasicInfo }) {
   const networks = sharedBasicInfo
     ? sharedBasicInfo.social.map((network) => (
         <span

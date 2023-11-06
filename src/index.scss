@@ -5,18 +5,28 @@
   font-style: normal;
 }
 @font-face {
-  font-family: 'Celtknot';
-  src: url('./fonts/Celtknot.ttf') format('truetype');
+  font-family: 'stonehen';
+  src: url('./fonts/stonehen.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'COLWELL_';
+  src: url('./fonts/COLWELL_.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
 body {
   margin: 0;
-  color: #bda737 !important;
-  font-family: 'Celtknot', sans-serif !important;
+  font-family: 'COLWELL_', sans-serif !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  color: #500025;
 }
 
 code {

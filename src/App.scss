@@ -19,13 +19,16 @@ html {
 }
 
 .title-styles {
-  font-family: 'Celtknot', sans-serif;
+  font-family: 'COLWELL_', sans-serif;
   font-size: 250%;
+  color: #500025;
+  font-weight: bold;
 }
 
 .header-icon {
-  height: 150px;
-  width: 150px;
+  height: 144px;
+  width: 124px;
+  padding-bottom: 30px;
 }
 
 header {
@@ -37,13 +40,73 @@ header {
   -webkit-background-size: cover;
   text-align: center;
   overflow: hidden;
-  background-color: #500025;
+  background-color: whitesmoke;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   padding-top: 150px;
   padding-bottom: 0;
+}
+
+.burger-menu {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 1000;
+}
+
+.menu-toggle {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+}
+
+.bar {
+  width: 30px;
+  height: 4px;
+  background-color: #bda737;
+  margin: 3px 0;
+  transition: 0.4s;
+}
+
+.menu-toggle.open .bar:nth-child(1) {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.menu-toggle.open .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-toggle.open .bar:nth-child(3) {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+.menu {
+  position: absolute;
+  top: 30px;
+  right: 0;
+  background-color: #bda737;
+  padding: 10px;
+  border: 1px solid #500025;
+  list-style: none;
+}
+
+.menu li {
+  margin: 10px 0;
+  transform: scale(1);
+  transition: transform 0.2s;
+}
+.menu li:hover {
+  transform: scale(1.1);
+}
+
+.menu a {
+  text-decoration: none;
+  color: #500025;
+  font-family: 'cCeltico';
+  font-size: 28px;
+  white-space: nowrap;
 }
 
 .language-icon {
@@ -53,14 +116,14 @@ header {
 
 .project-date {
   font-size: 16px;
-  font-family: 'Celtknot', sans-serif;
+  font-family: 'COLWELL_', sans-serif;
   padding: 8px 15px 2px 15px;
   position: relative;
   z-index: -500;
-  border-top: 5px solid #696969;
+  border-top: 5px solid #500025;
   border-radius: 0 0 5px 5px;
-  background-color: #696969;
-  color: white;
+  background-color: #bfaa76;
+  color: #500025;
 }
 
 .skills-tile {
@@ -73,7 +136,7 @@ header {
 
 .language {
   font-size: 25px;
-  background-color: #500025;
+  background-color: #f5f5f5;
   padding-bottom: 10px;
   padding-top: 80px;
 }
@@ -81,7 +144,7 @@ header {
 header h1 {
   font-size: 400%;
   text-align: center;
-  color: #bda737;
+  color: #500025;
   font-family: 'cCeltico', sans-serif;
   margin: 0 auto 18px auto;
   width: 100%;
@@ -106,7 +169,7 @@ header h1 {
 }
 
 #about {
-  background: #fff;
+  background: whitesmoke;
   overflow: hidden;
 }
 
@@ -115,17 +178,26 @@ header h1 {
   font: 18px/24px 'cCeltico', sans-serif;
   text-transform: uppercase;
   letter-spacing: 3px;
-  color: #bda737;
+  color: #500025;
   text-align: center;
+}
+#about .card,
+#about .polaroid span {
+  background-color: #500025;
+}
+
+.card-body {
+  color: #bfaa76 !important;
 }
 
 .foto img {
   display: block;
   width: 100%;
+  object-fit: cover;
 }
 
 .foto div {
-  background: #ffffff;
+  background: #500025;
   display: inline-block;
   margin: 0 auto 5% auto;
   padding: 10px 10px 5px;
@@ -164,7 +236,7 @@ header h1 {
   font: 18px/24px 'opensans-bold', sans-serif;
   text-transform: uppercase;
   letter-spacing: 3px;
-  color: #bda737;
+  color: #bfaa76;
   text-align: center;
 }
 
@@ -192,7 +264,7 @@ header h1 {
 }
 
 .link-href {
-  color: #bda737;
+  color: #500025;
 }
 
 .wave {
@@ -200,8 +272,7 @@ header h1 {
 }
 
 .font-trebuchet {
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
-    'Lucida Sans', Arial, sans-serif;
+  font-family: 'COLWELL_', sans-serif;
 }
 
 #preview {
@@ -222,49 +293,22 @@ header h1 {
   background: #500025;
 }
 
-.experience-icon {
-  font-size: 300%;
-  margin-top: 25%;
-  text-align: center;
-}
-
-.main-badge {
-  font-size: 13px !important;
-  text-align: left !important;
-  padding: 5px 8px 5px 8px !important;
-  vertical-align: baseline;
-  background-color: #ae944f !important;
-  color: white;
-  font-weight: lighter !important;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-
-.experience-badge {
-  font-size: 11px !important;
-  text-align: left !important;
-  padding: 5px 8px 5px 8px !important;
-  vertical-align: baseline;
-  background-color: #f9f5e9 !important;
-  color: #bda737;
-  font-weight: lighter !important;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-
-.vertical-timeline-element-date {
-  padding: 0 !important;
-  margin: 0 !important;
-}
-
-@media only screen and (max-width: 1170px) {
-  .experience-icon {
-    font-size: 170%;
-    margin-top: 27%;
-    text-align: center;
-  }
-}
-
 .modal-inside .modal-content {
-  background: white;
+  background: whitesmoke;
+}
+.modal-inside .modal-content h3 {
+  font-family: 'cCeltico', sans-serif !important;
+  font-weight: bold !important;
+  font-size: 20px !important;
+  color: #500025;
+}
+.modal-description {
+  font-size: 18px !important;
+  font-weight: bold !important ;
+  color: #500025;
+}
+.modal-inside i {
+  color: #500025 !important;
 }
 
 .bars {
@@ -317,7 +361,7 @@ header h1 {
 }
 
 .close-icon {
-  color: #bda737;
+  color: #500025;
   font-weight: lighter !important;
 }
 
@@ -337,11 +381,11 @@ header h1 {
 }
 
 .loader-bar-color {
-  color: #bda737 !important;
+  color: #500025 !important;
 }
 
 #portfolio {
-  background: #500025;
+  background: #f5f5f5;
   padding-bottom: 5%;
 }
 
@@ -397,15 +441,59 @@ header h1 {
 
   text-align: center;
   span {
-    color: #bda737;
+    color: #500025;
   }
 }
-
+#skills .text-white {
+  color: #bfaa76 !important;
+}
 .skill-icon {
   font-size: 180%;
-  color: white;
+  color: #bfaa76;
   text-align: center;
   position: relative;
+}
+
+#contact {
+  background-color: #f5f5f5;
+  font-size: 20px;
+}
+
+#contact label {
+  color: #500025;
+  font-weight: bold;
+}
+#contact .btn {
+  background-color: #500025;
+  color: #bda737;
+  display: block;
+  margin: 0 auto;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+  font-size: 2rem !important;
+  font-weight: bold !important;
+}
+
+#contact .btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #bfaa76 !important;
+}
+
+.form-control {
+  font-size: 2rem !important;
+  font-weight: bold !important;
+  background-color: #f5f5f5 !important;
+  border: 2px solid #500025 !important;
+  color: #500025 !important;
 }
 
 footer {
@@ -417,16 +505,7 @@ footer {
   color: white;
   position: relative;
   text-align: center;
-}
-
-footer a,
-footer a:visited {
-  color: #fff;
-}
-
-footer a:hover,
-footer a:focus {
-  color: #fff;
+  font-size: 20px;
 }
 
 .social-links {
@@ -436,5 +515,17 @@ footer a:focus {
 
 h1 span {
   font-family: 'cCeltico', sans-serif;
-  color: #bda737;
+  color: #500025;
+}
+
+#home div div div .react-switch .react-switch-handle {
+  background: #bfaa76 !important;
+}
+
+#skills .text-white,
+.skill-icon,
+footer,
+footer a,
+footer a:visited {
+  color: #bfaa76 !important;
 }

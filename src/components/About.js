@@ -2,9 +2,7 @@ import React from 'react';
 import { Icon } from '@iconify/react';
 import reactIcon from '@iconify/icons-logos/react';
 
-function About(props) {
-  const { sharedBasicInfo, resumeBasicInfo } = props;
-
+function About({ sharedBasicInfo, resumeBasicInfo }) {
   let profilepic = sharedBasicInfo ? `images/${sharedBasicInfo.image}` : '';
   let sectionName = resumeBasicInfo ? resumeBasicInfo.section_name.about : '';
   let hello = resumeBasicInfo ? resumeBasicInfo.description_header : '';
@@ -35,32 +33,17 @@ function About(props) {
 
           <div className='col-md-8 center'>
             <div className='col-md-10'>
-              <div className='card'>
-                <div className='card-header'>
-                  <span
-                    className='iconify'
-                    data-icon='emojione:red-circle'
-                    data-inline='false'
-                  ></span>{' '}
-                  &nbsp;{' '}
-                  <span
-                    className='iconify'
-                    data-icon='twemoji:yellow-circle'
-                    data-inline='false'
-                  ></span>{' '}
-                  &nbsp;{' '}
-                  <span
-                    className='iconify'
-                    data-icon='twemoji:green-circle'
-                    data-inline='false'
-                  ></span>
-                </div>
+              <div
+                className='card'
+                style={{ borderRadius: '30px' }}
+              >
                 <div
                   className='card-body font-trebuchet text-justify ml-3 mr-3'
                   style={{
                     height: 'auto',
-                    fontSize: '132%',
+                    fontSize: '160%',
                     lineHeight: '200%',
+                    fontWeight: 'bold',
                   }}
                 >
                   <br />

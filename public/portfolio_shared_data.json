@@ -1,7 +1,8 @@
 {
     "basic_info": {
+      "img":"images/Triskel.png",
       "name": "Fiona Berthou",
-      "titles": ["Devellopeuse Front-End"],
+      
       "social": [
         {
           "name": "github",

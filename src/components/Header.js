@@ -1,9 +1,14 @@
-import React, { useState } from 'react';
+import React, { useState, useMemo } from 'react';
 import Typical from 'react-typical';
 import Switch from 'react-switch';
 
-function Header(props) {
+function Header({ sharedData, resumeBasicInfo }) {
   const [checked, setChecked] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
 
   const onThemeSwitchChange = (isChecked) => {
     setChecked(isChecked);
@@ -17,40 +22,74 @@ function Header(props) {
       body.getAttribute(dataThemeAttribute) === 'dark' ? 'light' : 'dark';
     body.setAttribute(dataThemeAttribute, newTheme);
   };
+  const HeaderTitleTypeAnimation = useMemo(() => {
+    if (resumeBasicInfo) {
+      return (
+        <Typical
+          className='title-styles'
+          steps={resumeBasicInfo.title}
+          loop={50}
+        />
+      );
+    } else {
+      return null;
+    }
+  }, [resumeBasicInfo]);
 
-  if (props.sharedData) {
-    const name = props.sharedData.name;
-    const titles = props.sharedData.titles.map((x) => [x, 1500]).flat();
-
-    const HeaderTitleTypeAnimation = React.memo(
-      () => {
-        return (
-          <Typical
-            className='title-styles'
-            steps={titles}
-            loop={50}
-          />
-        );
-      },
-      (prevProps, nextProps) => true
-    );
+  if (sharedData && resumeBasicInfo) {
+    const img = sharedData.img;
+    const name = sharedData.name;
 
     return (
       <header
         id='home'
         style={{ height: window.innerHeight - 140, display: 'block' }}
       >
+        <div className='burger-menu'>
+          <div
+            className={`menu-toggle ${menuOpen ? 'open' : ''}`}
+            onClick={toggleMenu}
+          >
+            <div className='bar'></div>
+            <div className='bar'></div>
+            <div className='bar'></div>
+          </div>
+          {menuOpen && (
+            <nav>
+              <ul className='menu'>
+                <li>
+                  <a href='#home'>Accueil</a>
+                </li>
+                <li>
+                  <a href='#about'>A propos</a>
+                </li>
+                <li>
+                  <a href='#projects'>Projets</a>
+                </li>
+                <li>
+                  <a href='#skills'>Hard Skills</a>
+                </li>
+                <li>
+                  <a href='#contact'>Contact</a>
+                </li>
+              </ul>
+            </nav>
+          )}
+        </div>
+
         <div
           className='row aligner'
           style={{ height: '100%' }}
         >
           <div className='col-md-12'>
             <div>
-              <span
-                className='iconify header-icon'
-                data-icon='la:laptop-code'
+              <img
+                src={img}
+                alt='Triskel'
+                className='header-icon'
                 data-inline='false'
-              ></span>
+              />
+
               <br />
               <h1 className='mb-0'>
                 <Typical
@@ -58,21 +97,19 @@ function Header(props) {
                   wrapper='p'
                 />
               </h1>
-              <div className='title-container'>
-                <HeaderTitleTypeAnimation />
-              </div>
+              <div className='title-container'>{HeaderTitleTypeAnimation}</div>
               <Switch
                 checked={checked}
                 onChange={onThemeSwitchChange}
-                offColor='#baaa80'
-                onColor='#353535'
+                offColor='#500025'
+                onColor='#f5f5f5'
                 className='react-switch mx-auto'
                 width={90}
                 height={40}
                 uncheckedIcon={
                   <span
                     className='iconify'
-                    data-icon='twemoji:owl'
+                    data-icon='twemoji:bat'
                     data-inline='false'
                     style={{
                       display: 'block',
@@ -80,7 +117,7 @@ function Header(props) {
                       fontSize: 25,
                       textAlign: 'end',
                       marginLeft: '20px',
-                      color: '#353239',
+                      color: '#500025',
                     }}
                   ></span>
                 }
@@ -95,7 +132,7 @@ function Header(props) {
                       fontSize: 25,
                       textAlign: 'end',
                       marginLeft: '10px',
-                      color: '#353239',
+                      color: '#500025',
                     }}
                   ></span>
                 }
