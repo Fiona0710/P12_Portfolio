@@ -22,7 +22,7 @@
       {
         "title": "Argent Bank",
         "startDate": "2023",
-        "description": "En tant que développeur front-end chez Argent Bank, j'ai réalisé le front-end d'une application web React. J'ai également utilisé Redux pour gérer l'état de l'application. L'application permet aux utilisateurs de visiter la page d'accueil, de se connecter, de visualiser leur profil, et de se déconnecter. J'ai également appliqué des bonnes pratiques Green Code en optimisant les images et créant des composants réutilisables. Jai également réalisé une documentation Swagger pour la gestions futurs des transactions.",
+        "description": "En tant que développeuse front-end chez Argent Bank, j'ai réalisé le front-end d'une application web React. J'ai également utilisé Redux pour gérer l'état de l'application. L'application permet aux utilisateurs de visiter la page d'accueil, de se connecter, de visualiser leur profil, et de se déconnecter. J'ai également appliqué des bonnes pratiques Green Code en optimisant les images et créant des composants réutilisables. Jai également réalisé une documentation Swagger pour la gestions futurs des transactions.",
         "images": [
           "images/projects/Argent-Bank.webp",
           "images/projects/Argent-Bank2.webp"
@@ -55,7 +55,7 @@
       {
         "title": "724 Events",
         "startDate": "2023",
-        "description": "En tant que développeur front-end freelance, ma mission consistait à résoudre les problèmes et à tester le site web de l'agence événementielle 724events. Le site, partiellement intégré par un précédent développeur, présentait des bugs qui entraînaient l'expérience des visiteurs. J'ai utilisé des outils de développement, notamment React Developer Tools, pour inspecter le comportement du site. J'ai identifié et corrigé les problèmes, en me basant sur les indications de l'ancien développeur et en complétant le cahier de recette.",
+        "description": "En tant que développeuse front-end freelance, ma mission consistait à résoudre les problèmes et à tester le site web de l'agence événementielle 724events. Le site, partiellement intégré par un précédent développeur, présentait des bugs qui entraînaient l'expérience des visiteurs. J'ai utilisé des outils de développement, notamment React Developer Tools, pour inspecter le comportement du site. J'ai identifié et corrigé les problèmes, en me basant sur les indications de l'ancien développeur et en complétant le cahier de recette.",
         "images": [
           "images/projects/724-Events.webp",
           "images/projects/724-Events2.webp"
@@ -80,7 +80,7 @@
       {
         "title": "Nina Carducci",
         "startDate": "2023",
-        "description": "En tant que développeur freelance, j'ai optimisé le site de la photographe Nina Carducci. Le site avait des problèmes de vitesse de chargement et de visibilité en ligne. J'ai amélioré le référencement SEO, les performances du site et l'accessibilité. J'ai optimisé le poids des images, ajouté des balises pour les réseaux sociaux et renforcé le référencement local pour une portée plus large. J'ai utilisé des outils tels que Lighthouse et Wave pour évaluer et améliorer les performances du site. Notre collaboration a résolu ces problèmes et a augmenté la visibilité en ligne de Nina.",
+        "description": "En tant que développeuse freelance, j'ai optimisé le site de la photographe Nina Carducci. Le site avait des problèmes de vitesse de chargement et de visibilité en ligne. J'ai amélioré le référencement SEO, les performances du site et l'accessibilité. J'ai optimisé le poids des images, ajouté des balises pour les réseaux sociaux et renforcé le référencement local pour une portée plus large. J'ai utilisé des outils tels que Lighthouse et Wave pour évaluer et améliorer les performances du site. Notre collaboration a résolu ces problèmes et a augmenté la visibilité en ligne de Nina.",
         "images": [
           "images/projects/Nina-Carducci.webp",
           "images/projects/Nina-Carducci2.webp"
@@ -102,7 +102,7 @@
       {
         "title": "Kasa",
         "startDate": "2023",
-        "description": "J'ai rejoint l'équipe de Kasa en tant que développeur front-end freelance pour participer à la refonte complète de leur site web. Kasa est une entreprise de location d'appartements entre particuliers, leader en France, qui a décidé de moderniser sa plateforme. Ma mission principale consistait à développer l'ensemble de l'application front-end en utilisant React, en suivant les maquettes Figma et en garantissant la qualité du code.",
+        "description": "J'ai rejoint l'équipe de Kasa en tant que développeuse front-end freelance pour participer à la refonte complète de leur site web. Kasa est une entreprise de location d'appartements entre particuliers, leader en France, qui a décidé de moderniser sa plateforme. Ma mission principale consistait à développer l'ensemble de l'application front-end en utilisant React, en suivant les maquettes Figma et en garantissant la qualité du code.",
         "images": [
           "images/projects/Kasa.webp",
           "images/projects/Kasa2.webp"
@@ -186,7 +186,7 @@
       {
         "title": "Ohmyfood",
         "startDate": "2023",
-        "description": "En tant que développeur junior chez OhMyFood, j'ai contribué au développement d'un site mobile first permettant aux clients de découvrir les menus de restaurants gastronomiques à Paris, avec la possibilité de composer leur repas à l'avance. Ce projet a aidé OhMyFood à s'imposer sur le marché de la restauration parisienne, en mettant l'accent sur des animations soignées pour améliorer l'expérience utilisateur.",
+        "description": "En tant que développeuse junior chez OhMyFood, j'ai contribué au développement d'un site mobile first permettant aux clients de découvrir les menus de restaurants gastronomiques à Paris, avec la possibilité de composer leur repas à l'avance. Ce projet a aidé OhMyFood à s'imposer sur le marché de la restauration parisienne, en mettant l'accent sur des animations soignées pour améliorer l'expérience utilisateur.",
         "images": [
           "images/projects/Ohmyfood.webp",
           "images/projects/Ohmyfood2.webp"
