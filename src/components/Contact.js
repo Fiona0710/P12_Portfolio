@@ -85,6 +85,7 @@ const Contact = ({ resumeBasicInfo, resumeContact }) => {
               id='name'
               name='name'
               placeholder={contactNamePlaceholder}
+              autoComplete='name'
             />
           </div>
           <div className='form-group'>
@@ -95,6 +96,7 @@ const Contact = ({ resumeBasicInfo, resumeContact }) => {
               id='email'
               name='email'
               placeholder={contactEmailPlaceholder}
+              autoComplete='email'
             />
           </div>
           <div className='form-group'>
@@ -105,6 +107,7 @@ const Contact = ({ resumeBasicInfo, resumeContact }) => {
               rows='5'
               name='message'
               placeholder={contactMessagePlaceholder}
+              autoComplete='message'
             ></textarea>
           </div>
           <button

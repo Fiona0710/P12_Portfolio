@@ -14,7 +14,7 @@ function App() {
   const applyPickedLanguage = (pickedLanguage, oppositeLangIconId) => {
     swapCurrentlyActiveLanguage(oppositeLangIconId);
     document.documentElement.lang = pickedLanguage;
-    var resumePath =
+    const resumePath =
       document.documentElement.lang === window.$primaryLanguage
         ? `res_primaryLanguage.json`
         : `res_secondaryLanguage.json`;
@@ -22,15 +22,15 @@ function App() {
   };
 
   const swapCurrentlyActiveLanguage = (oppositeLangIconId) => {
-    var pickedLangIconId =
+    const pickedLangIconId =
       oppositeLangIconId === window.$primaryLanguageIconId
         ? window.$secondaryLanguageIconId
         : window.$primaryLanguageIconId;
     document
-      .getElementById(oppositeLangIconId)
+      .getElementById(pickedLangIconId)
       .removeAttribute('filter', 'brightness(40%)');
     document
-      .getElementById(pickedLangIconId)
+      .getElementById(oppositeLangIconId)
       .setAttribute('filter', 'brightness(40%)');
   };
 
@@ -81,6 +81,7 @@ function App() {
       <Header
         sharedData={sharedData.basic_info}
         resumeBasicInfo={resumeData.basic_info}
+        resumeMenu={resumeData.menu}
       />
       <div className='col-md-12 mx-auto text-center language'>
         <div

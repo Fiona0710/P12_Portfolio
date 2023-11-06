@@ -1,4 +1,10 @@
-{
+{ "menu": {
+    "home": "Home",
+    "about": "About",
+    "projects": "Projects",
+    "skills": "Hard Skills",
+    "contact": "Contact"
+  },
   "basic_info": {
     "title": "Developer Front-End junior",
     "description_header": "Hello",

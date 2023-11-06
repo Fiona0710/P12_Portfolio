@@ -4,12 +4,6 @@
   font-weight: normal;
   font-style: normal;
 }
-@font-face {
-  font-family: 'stonehen';
-  src: url('./fonts/stonehen.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
 
 @font-face {
   font-family: 'COLWELL_';
@@ -23,10 +17,12 @@ body {
   font-family: 'COLWELL_', sans-serif !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  letter-spacing: 1.5px;
 }
 
-a {
-  color: #500025;
+a:hover {
+  color: #500025 !important;
+  text-decoration: none !important;
 }
 
 code {

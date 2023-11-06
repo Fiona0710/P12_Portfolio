@@ -1,4 +1,11 @@
 {
+  "menu": {
+    "home": "Accueil",
+    "about": "A propos",
+    "projects": "Projets",
+    "skills": "Hard Skills",
+    "contact": "Contact"
+  },
   "basic_info": {
       "title": "Devellopeuse Front-End junior",
       "description_header": "Coucou",

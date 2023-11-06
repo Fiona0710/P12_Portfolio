@@ -1,14 +1,10 @@
 import React, { useState, useMemo } from 'react';
 import Typical from 'react-typical';
 import Switch from 'react-switch';
+import Menu from './Menu.js';
 
-function Header({ sharedData, resumeBasicInfo }) {
+function Header({ sharedData, resumeBasicInfo, ...resumeMenu }) {
   const [checked, setChecked] = useState(false);
-  const [menuOpen, setMenuOpen] = useState(false);
-
-  const toggleMenu = () => {
-    setMenuOpen(!menuOpen);
-  };
 
   const onThemeSwitchChange = (isChecked) => {
     setChecked(isChecked);
@@ -45,38 +41,7 @@ function Header({ sharedData, resumeBasicInfo }) {
         id='home'
         style={{ height: window.innerHeight - 140, display: 'block' }}
       >
-        <div className='burger-menu'>
-          <div
-            className={`menu-toggle ${menuOpen ? 'open' : ''}`}
-            onClick={toggleMenu}
-          >
-            <div className='bar'></div>
-            <div className='bar'></div>
-            <div className='bar'></div>
-          </div>
-          {menuOpen && (
-            <nav>
-              <ul className='menu'>
-                <li>
-                  <a href='#home'>Accueil</a>
-                </li>
-                <li>
-                  <a href='#about'>A propos</a>
-                </li>
-                <li>
-                  <a href='#projects'>Projets</a>
-                </li>
-                <li>
-                  <a href='#skills'>Hard Skills</a>
-                </li>
-                <li>
-                  <a href='#contact'>Contact</a>
-                </li>
-              </ul>
-            </nav>
-          )}
-        </div>
-
+        <Menu {...resumeMenu} />
         <div
           className='row aligner'
           style={{ height: '100%' }}

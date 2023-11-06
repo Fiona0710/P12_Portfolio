@@ -5,52 +5,8 @@ import AwesomeSliderStyles2 from '../scss/dark-slider.scss';
 import 'react-awesome-slider/dist/custom-animations/scale-out-animation.css';
 
 function ProjectDetailsModal({ data, onHide, ...props }) {
-  if (data) {
-    const images = data.images;
-    var title = data.title;
-    var description = data.description;
-    var url = data.url;
-    var urlWebSite = data.urlWebSite;
-    var urlTitle = data.urlTitle;
-    var urlWebSiteTitle = data.urlWebSiteTitle;
+  const images = data.images;
 
-    if (data.technologies) {
-      var tech = data.technologies.map((icons, i) => {
-        return (
-          <li
-            className='list-inline-item mx-3'
-            key={i}
-          >
-            <span>
-              <div className='text-center'>
-                <i
-                  className={icons.class}
-                  style={{ fontSize: '300%' }}
-                >
-                  <p
-                    className='text-center'
-                    style={{ fontSize: '30%' }}
-                  >
-                    {icons.name}
-                  </p>
-                </i>
-              </div>
-            </span>
-          </li>
-        );
-      });
-      if (images) {
-        var img = images.map((elem, i) => {
-          return (
-            <div
-              key={i}
-              data-src={elem}
-            />
-          );
-        });
-      }
-    }
-  }
   return (
     <Modal
       {...props}
@@ -75,33 +31,39 @@ function ProjectDetailsModal({ data, onHide, ...props }) {
             animation='scaleOutAnimation'
             className='slider-image'
           >
-            {img}
+            {data.technologies &&
+              images.map((elem, i) => (
+                <div
+                  key={i}
+                  data-src={elem}
+                />
+              ))}
           </AwesomeSlider>
         </div>
         <div className='col-md-10 mx-auto'>
           <h3 style={{ padding: '5px 5px 0 5px' }}>
-            {title}
-            {url ? (
+            {data.title}
+            {data.url ? (
               <span>
                 <a
-                  href={url}
+                  href={data.url}
                   target='_blank'
                   rel='noopener noreferrer'
                   className='link-href'
-                  title={urlTitle}
+                  title={data.urlTitle}
                 >
                   <i
                     className='fas fa-external-link-alt'
                     style={{ marginLeft: '10px' }}
                   ></i>
                 </a>
-                {urlWebSite ? (
+                {data.urlWebSite ? (
                   <a
-                    href={urlWebSite}
+                    href={data.urlWebSite}
                     target='_blank'
                     rel='noopener noreferrer'
                     className='link-href'
-                    title={urlWebSiteTitle}
+                    title={data.urlWebSiteTitle}
                   >
                     <i
                       className='fas fa-eye'
@@ -112,9 +74,33 @@ function ProjectDetailsModal({ data, onHide, ...props }) {
               </span>
             ) : null}
           </h3>
-          <p className='modal-description'>{description}</p>
+          <p className='modal-description'>{data.description}</p>
           <div className='col-md-12 text-center'>
-            <ul className='list-inline mx-auto'>{tech}</ul>
+            <ul className='list-inline mx-auto'>
+              {data.technologies &&
+                data.technologies.map((icon, i) => (
+                  <li
+                    className='list-inline-item mx-3'
+                    key={i}
+                  >
+                    <span>
+                      <div className='text-center'>
+                        <i
+                          className={icon.class}
+                          style={{ fontSize: '300%' }}
+                        >
+                          <p
+                            className='text-center'
+                            style={{ fontSize: '30%' }}
+                          >
+                            {icon.name}
+                          </p>
+                        </i>
+                      </div>
+                    </span>
+                  </li>
+                ))}
+            </ul>
           </div>
         </div>
       </div>
