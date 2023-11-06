@@ -1,0 +1,249 @@
+{ "menu": {
+    "home": "Home",
+    "about": "About",
+    "projects": "Projects",
+    "skills": "Hard Skills",
+    "contact": "Contact"
+  },
+  "basic_info": {
+    "title": "Developer Front-End junior",
+    "description_header": "Hello",
+    "description": "👋 I'm Fiona, and I recently transitioned into the world of web development. My journey led me to pursue a web development course at OpenClassrooms to earn an RNCP Level 5 degree, equivalent to a bachelor's degree. I discovered the art of web creation and programming, learning to craft responsive websites, optimize user experiences, and make each site as user-friendly as possible. Web development is an endless source of creativity, a space where ideas come to life, and each line of code represents an opportunity to build something unique. This creativity is what drives me, constantly seeking new ways to make websites more interactive and visually captivating. I present to you my portfolio, containing various projects I've had the pleasure to work on.",
+    "section_name": {
+      "about": "About Me",
+      "projects": "Projects",
+      "skills": "Hards Skills",
+      "contact": "Contact me"
+    }
+   
+  },
+  "projects": [
+    {
+      "title": "Argent Bank",
+      "startDate": "2023",
+      "description": "As a front-end developer at Argent Bank, I built the front-end of a React web application. I also used Redux to manage the application's state. The application allows users to visit the home page, log in, view their profile, and log out. I applied Green Code best practices by optimizing images and creating reusable components. I also created Swagger documentation for managing future transactions.",
+      "images": [
+        "images/projects/Argent-Bank.webp",
+        "images/projects/Argent-Bank.webp"
+      ],
+      "url": "https://github.com/Fiona0710/ArgentBank",
+      "urlTitle":"see the code",
+      "technologies": [
+        {
+          "class": "devicon-html5-plain",
+          "name": "HTML5"
+        },
+        {
+          "class": "devicon-sass-original",
+          "name": "Sass"
+        },
+        {
+          "class": "devicon-react-original",
+          "name": "React"
+        },
+        {
+          "class": "devicon-redux-original",
+          "name": "Redux"
+        },
+        {
+          "class": "devicon-mongodb-plain",
+          "name": "MongoDB"
+        }
+      ]
+    },
+    {
+      "title": "724 Events",
+      "startDate": "2023",
+      "description": "As a freelance front-end developer, my mission was to resolve issues and test the 724events event agency's website. The site, partially integrated by a previous developer, had bugs that impacted the visitor experience. I used development tools, including React Developer Tools, to inspect the site's behavior. I identified and fixed the issues, following the previous developer's indications and completing the test script.",
+      "images": [
+        "images/projects/724-Events.webp",
+        "images/projects/724-Events.webp"
+      ],
+      "url": "https://github.com/Fiona0710/724events",
+      "urlTitle":"see the code",
+      "technologies": [
+        {
+          "class": "devicon-html5-plain",
+          "name": "HTML5"
+        },
+        {
+          "class": "devicon-css3-plain",
+          "name": "CSS3"
+        },
+        {
+          "class": "devicon-react-original",
+          "name": "React"
+        }
+      ]
+    },
+    {
+      "title": "Nina Carducci",
+      "startDate": "2023",
+      "description": "As a freelance developer, I optimized the website of the photographer Nina Carducci. The site had issues with loading speed and online visibility. I improved SEO, site performance, and accessibility. I optimized image sizes, added social media tags, and enhanced local SEO for broader reach. I used tools like Lighthouse and Wave to assess and improve site performance. Our collaboration resolved these issues and increased Nina's online visibility.",
+      "images": [
+        "images/projects/Nina-Carducci.webp",
+        "images/projects/Nina-Carducci.webp"
+      ],
+      "url": "https://github.com/Fiona0710/NinaCarducci",
+      "urlTitle":"see the code",
+      "urlWebSite":"https://fiona0710.github.io/NinaCarducci/",
+      "urlWebSiteTitle":"see the website",
+      "technologies": [
+        {
+          "class": "devicon-html5-plain",
+          "name": "HTML5"
+        },
+        {
+          "class": "devicon-css3-plain",
+          "name": "CSS3"
+        }
+      ]
+    },
+    {
+      "title": "Kasa",
+      "startDate": "2023",
+      "description": "I joined the Kasa team as a freelance front-end developer to participate in the complete redesign of their website. Kasa is a leading peer-to-peer apartment rental company in France, which decided to modernize its platform. My main mission was to develop the entire front-end application using React, following Figma mockups and ensuring code quality.",
+      "images": [
+        "images/projects/Kasa.webp",
+        "images/projects/Kasa.webp"
+      ],
+      "url": "https://github.com/Fiona0710/Kasa",
+      "urlTitle":"see the code",
+      "technologies": [
+        {
+          "class": "devicon-figma-plain",
+          "name": "Figma"
+        },
+        {
+          "class": "devicon-html5-plain",
+          "name": "HTML5"
+        },
+        {
+          "class": "devicon-sass-original",
+          "name": "Sass"
+        },
+        {
+          "class": "devicon-react-original",
+          "name": "React"
+        }
+      ]
+    },
+    {
+      "title": "Sophie Bluel",
+      "startDate": "2023",
+      "description": "In this project for ArchiWebos agency, I was tasked with creating a dynamic website, developing multiple features for the portfolio of an interior architect. This included creating the architect's project presentation page, setting up the site administrator's login page, and developing a modal for uploading new media. I used the provided back-end code to make API requests and retrieve project data.",
+      "images": [
+        "images/projects/Sophie-Bluel.webp",
+        "images/projects/Sophie-Bluel.webp"
+      ],
+      "url": "https://github.com/Fiona0710/Portfolio-architecte-sophie-bluel-FrontEnd-",
+      "urlTitle":"see the code",
+      "technologies": [
+        {
+          "class": "devicon-figma-plain",
+          "name": "Figma"
+        },
+        {
+          "class": "devicon-html5-plain",
+          "name": "HTML5"
+        },
+        {
+          "class": "devicon-css3-plain",
+          "name": "CSS3"
+        },
+        {
+          "class": "devicon-javascript-plain",
+          "name": "JavaScript"
+        }
+      ]
+    },
+    {
+      "title": "Print-it",
+      "startDate": "2023",
+      "description": "In this front-end development project, I was tasked with creating an interactive JavaScript carousel for the Print It printing company's website. My goal was to enable visitors to navigate through images by implementing navigation arrows, indicator points to track the current position, and ensuring smooth scrolling with a loop.",
+      "images": [
+        "images/projects/Print-It.webp",
+        "images/projects/Print-It.webp"
+      ],
+      "url": "https://github.com/Fiona0710/P5_Print-it-JS",
+      "urlTitle":"see the code",
+      "urlWebSite":"https://fiona0710.github.io/P5_Print-it-JS/","urlWebSiteTitle":"see the website",
+      "technologies": [
+        {
+          "class": "devicon-html5-plain",
+          "name": "HTML5"
+        },
+        {
+          "class": "devicon-css3-plain",
+          "name": "CSS3"
+        },
+        {
+          "class": "devicon-javascript-plain",
+          "name": "JavaScript"
+        }
+      ]
+    },
+    {
+      "title": "Ohmyfood",
+      "startDate": "2023",
+      "description": "As a junior developer at OhMyFood, I contributed to the development of a mobile-first website that allows customers to explore menus from gourmet restaurants in Paris, with the ability to pre-compose their meals. This project helped OhMyFood establish itself in the Parisian dining market, focusing on smooth animations to enhance the user experience.",
+      "images": [
+        "images/projects/Ohmyfood.webp",
+        "images/projects/Ohmyfood.webp"
+      ],
+      "url": "https://github.com/Fiona0710/Projet_4",
+      "urlTitle":"see the code",
+      "urlWebSite":"https://fiona0710.github.io/Projet_4/",
+      "urlWebSiteTitle":"see the website",
+      "technologies": [
+        {
+          "class": "devicon-figma-plain",
+          "name": "Figma"
+        },
+        {
+          "class": "devicon-html5-plain",
+          "name": "HTML5"
+        },
+        {
+          "class": "devicon-sass-original",
+          "name": "Sass"
+        }
+      ]
+    },
+    {
+      "title": "Booki",
+      "startDate": "2023",
+      "description": "As a front-end developer, I was responsible for integrating the user interface of the Booki website. Working closely with the UI designer and the company's CTO, I transformed mockups into HTML and CSS code. The end result was a user-friendly experience and a functional website.",
+      "images": [
+        "images/projects/Booki.webp",
+        "images/projects/Booki.webp"
+      ],
+      "url": "https://github.com/Fiona0710/Projet_3_Fiona",
+      "urlTitle":"see the code",
+      "urlWebSite":"https://fiona0710.github.io/Projet_3_Fiona/", "urlWebSiteTitle":"see the website",
+      "technologies": [
+        {
+          "class": "devicon-figma-plain",
+          "name": "Figma"
+        },
+        {
+          "class": "devicon-html5-plain",
+          "name": "HTML5"
+        },
+        {
+          "class": "devicon-css3-plain",
+          "name": "CSS3"
+        }
+      ]
+    }
+  ],
+  "contact": {
+    "name": "Name",
+    "name_placeholder": "Your name",
+    "email": "Email address",
+    "email_placeholder": "Your email address",
+    "message": "Message",
+    "message_placeholder": "Your message",
+    "submit":"Send"
+}
+}

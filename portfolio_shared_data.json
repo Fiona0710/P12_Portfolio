@@ -1,0 +1,70 @@
+{
+    "basic_info": {
+      "img":"images/Triskel.png",
+      "name": "Fiona Berthou",
+      
+      "social": [
+        {
+          "name": "github",
+          "url": "https://github.com/Fiona0710",
+          "class": "fab fa-github"
+        },
+        {
+          "name": "linkedin",
+          "url": "https://www.linkedin.com/in/fiona-berthou-799a77266",
+          "class": "fab fa-linkedin"
+        },
+        {
+          "name": "email",
+          "url": "mailto:berthou.fiona@hotmail.com",
+          "class": "fas fa-envelope"
+        }
+        
+      ],
+      "image": "myProfile.jpg"
+    },
+    "skills": {
+      "icons": [
+        {
+          "name": "React",
+          "class": "devicon-react-original"
+        },
+        {
+          "name": "Redux",
+          "class": "devicon-redux-original" 
+        },
+        {
+          "name": "JavaScript",
+          "class": "devicon-javascript-plain"
+        },
+        {
+          "name": "Sass",
+          "class": "devicon-sass-original"   
+        }, 
+        {
+          "name": "HTML 5",
+          "class": "devicon-html5-plain"
+        },
+        {
+          "name": "CSS 3",
+          "class": "devicon-css3-plain"
+        },
+        {
+          "name": "Git",
+          "class": "devicon-git-plain"
+        },
+        {
+          "name": "GitHub",
+          "class": "devicon-github-plain"
+        },
+        {
+          "name": "Figma",
+          "class": "devicon-figma-plain"
+        },
+        {
+          "name": "Vscode",
+          "class": "devicon-visualstudio-plain"
+        } 
+      ]
+    }
+  }
