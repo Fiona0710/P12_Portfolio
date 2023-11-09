@@ -26,7 +26,7 @@ export default function Menu({ resumeMenu }) {
               <a href='#about'>{resumeMenu.about}</a>
             </li>
             <li>
-              <a href='#projects'>{resumeMenu.projects}</a>
+              <a href='#portfolio'>{resumeMenu.projects}</a>
             </li>
             <li>
               <a href='#skills'>{resumeMenu.skills}</a>

@@ -1,6 +1,6 @@
 {
     "basic_info": {
-      "img":"images/Triskel.png",
+      "img":"images/Triskel.webp",
       "name": "Fiona Berthou",
       
       "social": [
@@ -21,7 +21,7 @@
         }
         
       ],
-      "image": "myProfile.jpg"
+      "image": "myProfile.webp"
     },
     "skills": {
       "icons": [
