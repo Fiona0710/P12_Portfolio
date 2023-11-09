@@ -34,6 +34,15 @@ export default function Menu({ resumeMenu }) {
             <li>
               <a href='#contact'>{resumeMenu.contact}</a>
             </li>
+            <li>
+              <a
+                href='/images/FIONA_BERTHOU_CV_2023.pdf'
+                target='_blank'
+                download='FIONA_BERTHOU_CV_2023.pdf'
+              >
+                CV
+              </a>
+            </li>
           </ul>
         </nav>
       )}

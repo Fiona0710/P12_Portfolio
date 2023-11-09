@@ -3,7 +3,9 @@ import { Icon } from '@iconify/react';
 import reactIcon from '@iconify/icons-logos/react';
 
 function About({ sharedBasicInfo, resumeBasicInfo }) {
-  let profilepic = sharedBasicInfo ? `images/${sharedBasicInfo.image}` : '';
+  let profilepic = sharedBasicInfo
+    ? `${process.env.PUBLIC_URL}/images/${sharedBasicInfo.image}`
+    : '';
   let sectionName = resumeBasicInfo ? resumeBasicInfo.section_name.about : '';
   let hello = resumeBasicInfo ? resumeBasicInfo.description_header : '';
   let about = resumeBasicInfo ? resumeBasicInfo.description : '';
@@ -47,7 +49,7 @@ function About({ sharedBasicInfo, resumeBasicInfo }) {
                   }}
                 >
                   <br />
-                  <span className='wave'>{hello} :) </span>
+                  <span>{hello}</span>
                   <br />
                   <br />
                   {about}

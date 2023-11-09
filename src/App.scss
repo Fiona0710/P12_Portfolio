@@ -27,10 +27,48 @@ html {
   font-weight: bold;
 }
 
+// .header-icon {
+//   height: 144px;
+//   width: 124px;
+//   padding-bottom: 30px;
+//   animation: spin 6s linear infinite;
+// }
+
+// @keyframes spin {
+//   0% {
+//     transform: rotate(0deg);
+//   }
+//   100% {
+//     transform: rotate(-360deg);
+//   }
+// }
+
+@keyframes moveAndRotateCustom {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  20% {
+    transform: translate(-50px, 288deg) rotate(90deg);
+  }
+  40% {
+    transform: translate(-50px, 288deg) rotate(180deg);
+  }
+  60% {
+    transform: translate(-50px, 288deg) rotate(270deg);
+  }
+  80% {
+    transform: translate(-50px, 0) rotate(360deg);
+  }
+  100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+}
+
 .header-icon {
   height: 144px;
   width: 124px;
   padding-bottom: 30px;
+  animation: moveAndRotateCustom 5s linear infinite;
 }
 
 header {
@@ -272,10 +310,6 @@ header h1 {
 
 .link-href {
   color: #500025;
-}
-
-.wave {
-  font-size: 160%;
 }
 
 .font-trebuchet {
@@ -520,9 +554,39 @@ footer {
   font-size: 20px;
 }
 
+/* Keyframes */
+@keyframes wiggle {
+  0%,
+  7% {
+    transform: rotateZ(0);
+  }
+  15% {
+    transform: rotateZ(-15deg);
+  }
+  20% {
+    transform: rotateZ(10deg);
+  }
+  25% {
+    transform: rotateZ(-10deg);
+  }
+  30% {
+    transform: rotateZ(6deg);
+  }
+  35% {
+    transform: rotateZ(-4deg);
+  }
+  40%,
+  100% {
+    transform: rotateZ(0);
+  }
+}
+
+body {
+  background: #000;
+}
 .social-links {
-  margin-top: 50px;
   font-size: 22px;
+  animation: wiggle 2s linear infinite;
 }
 
 h1 span {

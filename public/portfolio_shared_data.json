@@ -18,6 +18,11 @@
           "name": "email",
           "url": "mailto:berthou.fiona@hotmail.com",
           "class": "fas fa-envelope"
+        },
+        {
+          "name": "phone",
+          "url": "tel:0688274960",
+          "class": "fas fa-phone"
         }
         
       ],

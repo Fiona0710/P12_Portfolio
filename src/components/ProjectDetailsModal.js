@@ -35,7 +35,7 @@ function ProjectDetailsModal({ data, onHide, ...props }) {
               images.map((elem, i) => (
                 <div
                   key={i}
-                  data-src={elem}
+                  data-src={`${process.env.PUBLIC_URL}/${elem}`}
                 />
               ))}
           </AwesomeSlider>

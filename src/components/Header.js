@@ -49,7 +49,7 @@ function Header({ sharedData, resumeBasicInfo, ...resumeMenu }) {
           <div className='col-md-12'>
             <div>
               <img
-                src={img}
+                src={`${process.env.PUBLIC_URL}/${img}`}
                 alt='Triskel'
                 className='header-icon'
                 data-inline='false'

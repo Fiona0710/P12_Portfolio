@@ -44,7 +44,7 @@ function App() {
   }, []);
 
   const loadResumeFromPath = (path) => {
-    fetch(path)
+    fetch(`${process.env.PUBLIC_URL}/${path}`)
       .then((response) => {
         if (!response.ok) {
           throw new Error('Network response was not ok');
@@ -60,7 +60,7 @@ function App() {
   };
 
   const loadSharedData = () => {
-    fetch('portfolio_shared_data.json')
+    fetch(`${process.env.PUBLIC_URL}/portfolio_shared_data.json`)
       .then((response) => {
         if (!response.ok) {
           throw new Error('Network response was not ok');
