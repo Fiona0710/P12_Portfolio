@@ -1,6 +1,8 @@
+@import './scss/utils/variables.scss';
+@import './scss/utils/keyframes.scss';
+
 @import './scss/themes/theme-dark.scss';
 @import './scss/themes/theme-light.scss';
-/* Ajoute ces styles dans ton fichier CSS ou dans ton composant avec des styles en ligne */
 
 html {
   font-size: 62.5%;
@@ -20,11 +22,10 @@ html {
 }
 
 .title-styles {
-  font-family: 'COLWELL_', sans-serif;
+  font-family: $fontColwell;
   letter-spacing: 1.5px;
-
   font-size: 250%;
-  color: #500025;
+  color: $primaryColor;
   font-weight: bold;
 }
 
@@ -32,37 +33,12 @@ html {
   position: absolute;
   z-index: 12000;
   top: 17%;
-  left: 50%;
+  left: calc(50% - 62px);
   height: 144px;
   width: 124px;
   padding-bottom: 30px;
-  /* animation: moveAndRotateCustom 5s linear infinite; */
+  animation: moveAndRotateCustom 5s linear infinite;
   transform: translate(-50%, -50%);
-}
-
-@keyframes moveAndRotateCustom {
-  0% {
-    transform: translate(0, -90px) rotate(0deg);
-  }
-
-  20% {
-    transform: translate(-243px, 87px) rotate(180deg);
-  }
-
-  40% {
-    transform: translate(-150px, 372px) rotate(0deg);
-  }
-
-  60% {
-    transform: translate(150px, 372px) rotate(270deg);
-  }
-
-  80% {
-    transform: translate(243px, 87px) rotate(90deg);
-  }
-  100% {
-    transform: translate(0, -90px) rotate(360deg);
-  }
 }
 
 header {
@@ -74,7 +50,7 @@ header {
   -webkit-background-size: cover;
   text-align: center;
   overflow: hidden;
-  background-color: whitesmoke;
+  background-color: $backgroundLight;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -99,7 +75,7 @@ header {
 .bar {
   width: 30px;
   height: 4px;
-  background-color: #500025;
+  background-color: $primaryColor;
   margin: 3px 0;
   transition: 0.4s;
   z-index: 2000;
@@ -121,9 +97,9 @@ header {
   position: absolute;
   top: 0px;
   right: 0;
-  background-color: #bda737;
+  background-color: $secondaryColor;
   padding: 20px;
-  border: 1px solid #500025;
+  border: 1px solid $primaryColor;
   list-style: none;
   border-radius: 23px;
 }
@@ -140,7 +116,7 @@ header {
 
 .menu a {
   text-decoration: none;
-  color: #500025;
+  color: $primaryColor;
   font-family: 'cCeltico';
   font-size: 20px;
   white-space: nowrap;
@@ -153,15 +129,15 @@ header {
 
 .project-date {
   font-size: 16px;
-  font-family: 'COLWELL_', sans-serif;
+  font-family: $fontColwell;
   letter-spacing: 1.5px;
   padding: 8px 15px 2px 15px;
   position: relative;
   z-index: -500;
-  border-top: 5px solid #500025;
+  border-top: 5px solid $primaryColor;
   border-radius: 0 0 5px 5px;
-  background-color: #bfaa76;
-  color: #500025;
+  background-color: $secondaryColor;
+  color: $primaryColor;
 }
 
 .skills-tile {
@@ -174,7 +150,7 @@ header {
 
 .language {
   font-size: 25px;
-  background-color: #f5f5f5;
+  background-color: $backgroundLight;
   padding-bottom: 10px;
   padding-top: 80px;
 }
@@ -182,18 +158,18 @@ header {
 header h1 {
   font-size: 400%;
   text-align: center;
-  color: #500025;
-  font-family: 'cCeltico', sans-serif;
+  color: $primaryColor;
+  font-family: $fontCeltico;
   margin: 0 auto 18px auto;
   width: 100%;
 }
 
 .slider-image {
-  border: 5px solid #500025;
+  border: 5px solid $primaryColor;
 }
 
 .slider-tab {
-  background-color: #500025;
+  background-color: $primaryColor;
   height: 25px;
 }
 
@@ -207,26 +183,26 @@ header h1 {
 }
 
 #about {
-  background: whitesmoke;
+  background: $backgroundLight;
   overflow: hidden;
 }
 
 #about h1 {
   padding-top: 5%;
-  font: 18px/24px 'cCeltico', sans-serif;
+  font: 18px/24px $fontCeltico;
   text-transform: uppercase;
   letter-spacing: 3px;
-  color: #500025;
+  color: $primaryColor;
   text-align: center;
 }
 #about .card,
 #about .polaroid span {
-  background-color: #500025;
+  background-color: $primaryColor;
   margin-top: 30px;
 }
 
 .card-body {
-  color: #bfaa76 !important;
+  color: $secondaryColor !important;
 }
 
 .foto img {
@@ -236,7 +212,7 @@ header h1 {
 }
 
 .foto div {
-  background: #500025;
+  background: $primaryColor;
   display: inline-block;
   margin: 0 auto 5% auto;
   padding: 10px 10px 5px;
@@ -269,13 +245,12 @@ header h1 {
   -moz-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7);
 }
-
 .project-title-settings {
   margin-top: 5%;
   font: 18px/24px 'opensans-bold', sans-serif;
   text-transform: uppercase;
   letter-spacing: 3px;
-  color: #bfaa76;
+  color: $secondaryColor;
   text-align: center;
 }
 
@@ -303,11 +278,11 @@ header h1 {
 }
 
 .link-href {
-  color: #500025;
+  color: $primaryColor;
 }
 
 .font-trebuchet {
-  font-family: 'COLWELL_', sans-serif;
+  font-family: $fontColwell;
   letter-spacing: 1.5px;
 }
 
@@ -326,25 +301,25 @@ header h1 {
 }
 
 #resume {
-  background: #500025;
+  background: $primaryColor;
 }
 
 .modal-inside .modal-content {
-  background: whitesmoke;
+  background: $backgroundLight;
 }
 .modal-inside .modal-content h3 {
-  font-family: 'cCeltico', sans-serif !important;
+  font-family: $fontCeltico !important;
   font-weight: bold !important;
   font-size: 20px !important;
-  color: #500025;
+  color: $primaryColor;
 }
 .modal-description {
   font-size: 18px !important;
   font-weight: bold !important ;
-  color: #500025;
+  color: $primaryColor;
 }
 .modal-inside i {
-  color: #500025 !important;
+  color: $primaryColor !important;
 }
 
 .bars {
@@ -397,7 +372,7 @@ header h1 {
 }
 
 .close-icon {
-  color: #500025;
+  color: $primaryColor;
   font-weight: lighter !important;
 }
 
@@ -417,7 +392,7 @@ header h1 {
 }
 
 .loader-bar-color {
-  color: #500025 !important;
+  color: $primaryColor !important;
 }
 
 #portfolio {
@@ -460,7 +435,7 @@ header h1 {
 }
 
 #skills {
-  background: #1f1f1f;
+  background: $backgroundDark;
   min-height: 200px;
   width: 100%;
   overflow: hidden;
@@ -477,15 +452,15 @@ header h1 {
 
   text-align: center;
   span {
-    color: #500025;
+    color: $primaryColor;
   }
 }
 #skills .text-white {
-  color: #bfaa76 !important;
+  color: $secondaryColor !important;
 }
 .skill-icon {
   font-size: 180%;
-  color: #bfaa76;
+  color: $secondaryColor;
   text-align: center;
   position: relative;
 }
@@ -496,12 +471,12 @@ header h1 {
 }
 
 #contact label {
-  color: #500025;
+  color: $primaryColor;
   font-weight: bold;
 }
 #contact .btn {
-  background-color: #500025;
-  color: #bda737;
+  background-color: $primaryColor;
+  color: $secondaryColor;
   display: block;
   margin: 0 auto;
   padding: 10px 20px;
@@ -521,7 +496,7 @@ header h1 {
 
 input::placeholder,
 textarea::placeholder {
-  color: #bfaa76 !important;
+  color: $secondaryColor !important;
 }
 button,
 input,
@@ -532,47 +507,19 @@ textarea {
   font-size: 2rem !important;
   font-weight: bold !important;
   background-color: #f5f5f5 !important;
-  border: 2px solid #500025 !important;
-  color: #500025 !important;
+  border: 2px solid $primaryColor !important;
+  color: $primaryColor !important;
 }
 
 footer {
-  background: #1f1f1f;
+  background: $backgroundDark;
   min-height: 100px;
   width: 100%;
   overflow: hidden;
   font-size: 14px;
-  color: white;
   position: relative;
   text-align: center;
   font-size: 20px;
-}
-
-/* Keyframes */
-@keyframes wiggle {
-  0%,
-  7% {
-    transform: rotateZ(0);
-  }
-  15% {
-    transform: rotateZ(-15deg);
-  }
-  20% {
-    transform: rotateZ(10deg);
-  }
-  25% {
-    transform: rotateZ(-10deg);
-  }
-  30% {
-    transform: rotateZ(6deg);
-  }
-  35% {
-    transform: rotateZ(-4deg);
-  }
-  40%,
-  100% {
-    transform: rotateZ(0);
-  }
 }
 
 body {
@@ -584,15 +531,15 @@ body {
 }
 
 h1 span {
-  font-family: 'cCeltico', sans-serif;
-  color: #500025;
+  font-family: $fontCeltico;
+  color: $primaryColor;
 }
 #home div div div .react-switch {
   top: 50px;
 }
 
 #home div div div .react-switch .react-switch-handle {
-  background: #bfaa76 !important;
+  background: $secondaryColor !important;
 }
 
 #skills .text-white,
@@ -600,5 +547,5 @@ h1 span {
 footer,
 footer a,
 footer a:visited {
-  color: #bfaa76 !important;
+  color: $secondaryColor !important;
 }

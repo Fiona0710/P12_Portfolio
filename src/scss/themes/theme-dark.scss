@@ -2,98 +2,98 @@ body[data-theme='dark'] {
   @import '../dark-slider.scss';
 
   .slider-tab {
-    background-color: #500025;
+    background-color: $primaryColor;
   }
 
   .title-styles {
-    color: #bda737;
+    color: $secondaryColor;
   }
 
   .header-icon {
-    color: #bda737;
+    color: $secondaryColor;
     opacity: 0.8;
   }
 
   .slider-image {
-    border: 5px solid #bda737;
+    border: 5px solid $secondaryColor;
   }
 
   .language {
-    background-color: #500025;
+    background-color: $primaryColor;
   }
 
   .link-href {
-    color: #bda737;
+    color: $secondaryColor;
   }
 
   .project-date {
-    background-color: #500025;
-    color: #bda737;
+    background-color: $primaryColor;
+    color: $secondaryColor;
   }
 
   header {
-    background-color: #500025;
+    background-color: $primaryColor;
     h1 {
-      color: #bda737;
+      color: $secondaryColor;
     }
   }
   .bar {
-    background-color: #bda737;
+    background-color: $secondaryColor;
   }
   .menu-toggle.open .bar {
-    background-color: #500025;
+    background-color: $primaryColor;
   }
   #about {
-    background-color: #500025;
+    background-color: $primaryColor;
     h1 span {
-      color: #bda737;
+      color: $secondaryColor;
     }
     .polaroid span {
       background: rgb(0 0 0 / 41%);
     }
     .card {
       background: rgb(0 0 0 / 41%);
-      color: #bda737;
+      color: $secondaryColor;
     }
   }
 
   #portfolio {
-    background: #500025;
+    background: $primaryColor;
     .section-title {
-      color: #bda737 !important;
+      color: $secondaryColor !important;
     }
     .foto div {
       background: rgb(0 0 0 / 41%);
     }
     .project-title-settings {
-      color: #bda737;
+      color: $secondaryColor;
     }
   }
 
   .modal-inside .modal-content {
-    background: #500025 !important;
-    color: #bda737 !important;
+    background: $primaryColor !important;
+    color: $secondaryColor !important;
   }
   .modal-content h3 {
-    color: #bda737 !important;
+    color: $secondaryColor !important;
   }
   .modal-description,
   .modal-description,
   .modal-inside i {
-    color: #bda737 !important;
+    color: $secondaryColor !important;
   }
   .close-icon {
-    color: #bda737 !important;
+    color: $secondaryColor !important;
   }
   #contact {
     filter: brightness(80%);
-    background: #500025;
+    background: $primaryColor;
     .section-title {
-      color: #bda737 !important;
+      color: $secondaryColor !important;
     }
   }
   #contact label {
-    color: whitesmoke;
+    color: $backgroundLight;
   }
 
   #contact .btn {
@@ -103,17 +103,17 @@ body[data-theme='dark'] {
   .form-control {
     font-size: 2rem !important;
     font-weight: bold !important;
-    background-color: whitesmoke !important;
-    border: 2px solid #500025 !important;
-    color: #500025 !important;
+    background-color: $backgroundLight !important;
+    border: 2px solid $primaryColor !important;
+    color: $primaryColor !important;
   }
 
   input::placeholder,
   textarea::placeholder {
-    color: #500025 !important;
+    color: $primaryColor !important;
   }
 
   h1 span {
-    color: #bda737 !important;
+    color: $secondaryColor !important;
   }
 }

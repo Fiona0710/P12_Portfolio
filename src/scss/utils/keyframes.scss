@@ -1,0 +1,52 @@
+// Animation triskell
+@keyframes moveAndRotateCustom {
+  0% {
+    transform: translate(0, -90px) rotate(0deg);
+  }
+
+  20% {
+    transform: translate(-243px, 87px) rotate(180deg);
+  }
+
+  40% {
+    transform: translate(-150px, 372px) rotate(0deg);
+  }
+
+  60% {
+    transform: translate(150px, 372px) rotate(270deg);
+  }
+
+  80% {
+    transform: translate(243px, 87px) rotate(90deg);
+  }
+  100% {
+    transform: translate(0, -90px) rotate(360deg);
+  }
+}
+
+// Animation icon du footer
+@keyframes wiggle {
+  0%,
+  7% {
+    transform: rotateZ(0);
+  }
+  15% {
+    transform: rotateZ(-15deg);
+  }
+  20% {
+    transform: rotateZ(10deg);
+  }
+  25% {
+    transform: rotateZ(-10deg);
+  }
+  30% {
+    transform: rotateZ(6deg);
+  }
+  35% {
+    transform: rotateZ(-4deg);
+  }
+  40%,
+  100% {
+    transform: rotateZ(0);
+  }
+}
