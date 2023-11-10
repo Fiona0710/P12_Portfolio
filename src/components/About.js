@@ -52,7 +52,7 @@ function About({ sharedBasicInfo, resumeBasicInfo }) {
                   <span>{hello}</span>
                   <br />
                   <br />
-                  {about}
+                  <div>{about}</div>
                 </div>
               </div>
             </div>

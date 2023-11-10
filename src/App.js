@@ -6,6 +6,7 @@ import About from './components/About';
 import Contact from './components/Contact';
 import Projects from './components/Projects';
 import Skills from './components/Skills';
+import TriskelAnimation from './components/TriskelAnimation';
 
 function App() {
   const [resumeData, setResumeData] = useState({});
@@ -134,6 +135,7 @@ function App() {
         resumeBasicInfo={resumeData.basic_info}
       />
       <Footer sharedBasicInfo={sharedData.basic_info} />
+      <TriskelAnimation sharedBasicInfo={sharedData.basic_info} />
     </div>
   );
 }

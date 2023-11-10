@@ -1,5 +1,6 @@
 @import './scss/themes/theme-dark.scss';
 @import './scss/themes/theme-light.scss';
+/* Ajoute ces styles dans ton fichier CSS ou dans ton composant avec des styles en ligne */
 
 html {
   font-size: 62.5%;
@@ -27,48 +28,41 @@ html {
   font-weight: bold;
 }
 
-// .header-icon {
-//   height: 144px;
-//   width: 124px;
-//   padding-bottom: 30px;
-//   animation: spin 6s linear infinite;
-// }
-
-// @keyframes spin {
-//   0% {
-//     transform: rotate(0deg);
-//   }
-//   100% {
-//     transform: rotate(-360deg);
-//   }
-// }
-
-@keyframes moveAndRotateCustom {
-  0% {
-    transform: translate(0, 0) rotate(0deg);
-  }
-  20% {
-    transform: translate(-50px, 288deg) rotate(90deg);
-  }
-  40% {
-    transform: translate(-50px, 288deg) rotate(180deg);
-  }
-  60% {
-    transform: translate(-50px, 288deg) rotate(270deg);
-  }
-  80% {
-    transform: translate(-50px, 0) rotate(360deg);
-  }
-  100% {
-    transform: translate(0, 0) rotate(0deg);
-  }
-}
-
 .header-icon {
+  position: absolute;
+  z-index: 12000;
+  top: 17%;
+  left: 50%;
   height: 144px;
   width: 124px;
   padding-bottom: 30px;
-  animation: moveAndRotateCustom 5s linear infinite;
+  /* animation: moveAndRotateCustom 5s linear infinite; */
+  transform: translate(-50%, -50%);
+}
+
+@keyframes moveAndRotateCustom {
+  0% {
+    transform: translate(0, -90px) rotate(0deg);
+  }
+
+  20% {
+    transform: translate(-243px, 87px) rotate(180deg);
+  }
+
+  40% {
+    transform: translate(-150px, 372px) rotate(0deg);
+  }
+
+  60% {
+    transform: translate(150px, 372px) rotate(270deg);
+  }
+
+  80% {
+    transform: translate(243px, 87px) rotate(90deg);
+  }
+  100% {
+    transform: translate(0, -90px) rotate(360deg);
+  }
 }
 
 header {

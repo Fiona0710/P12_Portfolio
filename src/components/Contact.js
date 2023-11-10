@@ -2,14 +2,14 @@ import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 
 const Contact = ({ resumeBasicInfo, resumeContact }) => {
-  let sectionName,
-    contactName,
-    contactNamePlaceholder,
-    contactEmail,
-    contactEmailPlaceholder,
-    contactMessage,
-    contactMessagePlaceholder,
-    contactSubmit;
+  let sectionName = '';
+  let contactName = '';
+  let contactNamePlaceholder = '';
+  let contactEmail = '';
+  let contactEmailPlaceholder = '';
+  let contactMessage = '';
+  let contactMessagePlaceholder = '';
+  let contactSubmit = '';
 
   if (resumeBasicInfo && resumeContact) {
     sectionName = resumeBasicInfo.section_name.contact;
@@ -20,14 +20,6 @@ const Contact = ({ resumeBasicInfo, resumeContact }) => {
     contactMessage = resumeContact.message;
     contactMessagePlaceholder = resumeContact.message_placeholder;
     contactSubmit = resumeContact.submit;
-  } else {
-    sectionName = '';
-    contactName = '';
-    contactNamePlaceholder = '';
-    contactEmail = '';
-    contactEmailPlaceholder = '';
-    contactMessage = '';
-    contactMessagePlaceholder = '';
   }
 
   const form = useRef();
