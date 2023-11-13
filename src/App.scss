@@ -37,7 +37,7 @@ html {
   height: 144px;
   width: 124px;
   padding-bottom: 30px;
-  animation: moveAndRotateCustom 5s linear infinite;
+  animation: moveAndRotateCustom 5s linear both;
   transform: translate(-50%, -50%);
 }
 
@@ -433,7 +433,12 @@ header h1 {
     margin-bottom: 30px;
   }
 }
-
+@media screen and (max-width: 768px) {
+  .header-icon {
+    animation: none;
+    left: 50%;
+  }
+}
 #skills {
   background: $backgroundDark;
   min-height: 200px;
