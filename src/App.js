@@ -12,6 +12,7 @@ function App() {
   const [resumeData, setResumeData] = useState({});
   const [sharedData, setSharedData] = useState({});
 
+  // Fonction pour appliquer la langue sélectionnée
   const applyPickedLanguage = (pickedLanguage, oppositeLangIconId) => {
     swapCurrentlyActiveLanguage(oppositeLangIconId);
     document.documentElement.lang = pickedLanguage;
@@ -22,6 +23,7 @@ function App() {
     loadResumeFromPath(resumePath);
   };
 
+  // Fonction pour échanger la langue actuellement active
   const swapCurrentlyActiveLanguage = (oppositeLangIconId) => {
     const pickedLangIconId =
       oppositeLangIconId === window.$primaryLanguageIconId
@@ -35,6 +37,7 @@ function App() {
       .setAttribute('filter', 'brightness(40%)');
   };
 
+  // Charge les données partagées et appliquer la langue au montage du composant
   useEffect(() => {
     loadSharedData();
     applyPickedLanguage(
@@ -44,6 +47,8 @@ function App() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
+  // Récupérer des données des fichiers res.primaryLanguage.json et res.secondaryLanguage.json
+  // en utisant une variable d'environnement ce permet d'ajuster automatiquement les chemins en fonction de l'environnement
   const loadResumeFromPath = (path) => {
     fetch(`${process.env.PUBLIC_URL}/${path}`)
       .then((response) => {
@@ -60,6 +65,7 @@ function App() {
       });
   };
 
+  // Récupérer des données du fichier portfolio_shared_data.json
   const loadSharedData = () => {
     fetch(`${process.env.PUBLIC_URL}/portfolio_shared_data.json`)
       .then((response) => {
@@ -84,6 +90,7 @@ function App() {
         resumeBasicInfo={resumeData.basic_info}
         resumeMenu={resumeData.menu}
       />
+      {/* Sélecteur de langue */}
       <div className='col-md-12 mx-auto text-center language'>
         <div
           onClick={() =>
@@ -130,6 +137,7 @@ function App() {
         sharedSkills={sharedData.skills}
         resumeBasicInfo={resumeData.basic_info}
       />
+
       <Contact
         resumeContact={resumeData.contact}
         resumeBasicInfo={resumeData.basic_info}
@@ -140,4 +148,5 @@ function App() {
   );
 }
 
+// Export du composant App comme composant par défaut
 export default App;

@@ -26,7 +26,7 @@ function Footer({ sharedBasicInfo }) {
         <div className='copyright py-4 text-center'>
           <div className='container'>
             <small>
-              Copyright &copy; {sharedBasicInfo ? sharedBasicInfo.name : '???'}
+              Copyright &copy; {sharedBasicInfo ? sharedBasicInfo.name : ''}
             </small>
           </div>
         </div>

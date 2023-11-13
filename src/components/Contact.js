@@ -1,5 +1,6 @@
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
+// emailjs est utilisé pour envoyer le formulaire de contact par e-mail. La bibliothèque simplifie le processus d'envoi de courriels en utilisant des modèles prédéfinis ( template_5tmnj4e) et un service configuré ( service_esiy8ak). La fonction sendEmailest déclenchée lors de la soumission du formulaire, et elle utilise la référence du formulaire ( form.current) pour collecter les données du formulaire et les envoyer via emailjs.
 
 const Contact = ({ resumeBasicInfo, resumeContact }) => {
   let sectionName = '';
@@ -23,7 +24,7 @@ const Contact = ({ resumeBasicInfo, resumeContact }) => {
   }
 
   const form = useRef();
-
+  // permet de créer une référence qui peut être utilisée pour accéder à des éléments du DOM ou à d'autres valeurs dans le composant, et elle persiste entre les rendus du composant sans déclencher un rendu supplémentaire.
   const sendEmail = (e) => {
     e.preventDefault();
 

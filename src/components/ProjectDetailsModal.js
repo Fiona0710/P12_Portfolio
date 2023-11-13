@@ -1,13 +1,17 @@
 import { Modal } from 'react-bootstrap';
 import AwesomeSlider from 'react-awesome-slider';
+// Styles spécifiques pour le slider theme light et dark
 import AwesomeSliderStyles from '../scss/light-slider.scss';
 import AwesomeSliderStyles2 from '../scss/dark-slider.scss';
+// Animation personnalisée pour le slider.
 import 'react-awesome-slider/dist/custom-animations/scale-out-animation.css';
 
 function ProjectDetailsModal({ data, onHide, ...props }) {
+  // onHide fonction pour gérer la fermeture de la modale.
   const images = data.images;
 
   return (
+    // Utilisation du composant Modal de react-bootstrap
     <Modal
       {...props}
       size='lg'
@@ -26,11 +30,13 @@ function ProjectDetailsModal({ data, onHide, ...props }) {
           className='col-md-10 mx-auto'
           style={{ paddingBottom: '50px' }}
         >
+          {/* Une bibliothèque de slider réactif. */}
           <AwesomeSlider
             cssModule={[AwesomeSliderStyles, AwesomeSliderStyles2]}
             animation='scaleOutAnimation'
             className='slider-image'
           >
+            {/* Mapping des images du projet */}
             {data.technologies &&
               images.map((elem, i) => (
                 <div
@@ -41,10 +47,12 @@ function ProjectDetailsModal({ data, onHide, ...props }) {
           </AwesomeSlider>
         </div>
         <div className='col-md-10 mx-auto'>
+          {/* Affichage du titre du projet avec liens éventuels */}
           <h3 style={{ padding: '5px 5px 0 5px' }}>
             {data.title}
             {data.url ? (
               <span>
+                {/* Lien vers le code du projet */}
                 <a
                   href={data.url}
                   target='_blank'
@@ -58,6 +66,7 @@ function ProjectDetailsModal({ data, onHide, ...props }) {
                   ></i>
                 </a>
                 {data.urlWebSite ? (
+                  // Lien vers le site Web du projet
                   <a
                     href={data.urlWebSite}
                     target='_blank'
@@ -74,8 +83,10 @@ function ProjectDetailsModal({ data, onHide, ...props }) {
               </span>
             ) : null}
           </h3>
+          {/* Affichage de la description du projet */}
           <p className='modal-description'>{data.description}</p>
           <div className='col-md-12 text-center'>
+            {/* Affichage des technologies utilisées avec leurs icônes respectives */}
             <ul className='list-inline mx-auto'>
               {data.technologies &&
                 data.technologies.map((icon, i) => (

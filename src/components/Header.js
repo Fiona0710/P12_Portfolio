@@ -18,9 +18,11 @@ function Header({ sharedData, resumeBasicInfo, ...resumeMenu }) {
       body.getAttribute(dataThemeAttribute) === 'dark' ? 'light' : 'dark';
     body.setAttribute(dataThemeAttribute, newTheme);
   };
+  // useMemo est utilisé ici pour optimiser les performances en mémorisant l'animation généré par Typical. Cela évite de recalculer cette valeur à chaque fois que le composant est rendu.
   const HeaderTitleTypeAnimation = useMemo(() => {
     if (resumeBasicInfo) {
       return (
+        // Le composant Typical est utilisé pour créer une animation de texte où le contenu change avec une animation de frappe.
         <Typical
           className='title-styles'
           steps={resumeBasicInfo.title}
@@ -55,6 +57,7 @@ function Header({ sharedData, resumeBasicInfo, ...resumeMenu }) {
                 />
               </h1>
               <div className='title-container'>{HeaderTitleTypeAnimation}</div>
+              {/* Le composant Switch est utilisé pour permettre à l'utilisateur de basculer entre les thèmes clairs et sombres de la page. */}
               <Switch
                 checked={checked}
                 onChange={onThemeSwitchChange}
